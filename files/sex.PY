@@ -1,6 +1,6 @@
 #请手动复制《:
 from ast import If, Or
-from curses import raw
+
 
 
 
