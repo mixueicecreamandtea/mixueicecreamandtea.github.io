@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>��ҳ</title>
+    <title>主页</title>
 
     <style>
         html {
@@ -19,25 +19,49 @@
         .header {
             background-color: #47e9ff;
             padding: 0px;
-            text-align: left;
+            text-align: center;
+
+        }
+
+        .frame {
+            margin: auto;
+            width: 50%;
         }
     </style>
 </head>
 
-<body>
-    <a>
-        <div class="header">
-            <h1>nalqp</h1>
-        </div>
-        <div>
-            <iframe class="link" src="main.html" frameborder="0" width="auto" height="auto" name="MAIN" class="1">
+<body onload="displayDate()">
+
+
+    <div class="header">
+        <h1>nalqp</h1>
+    </div>
+    <div class="frame">
+        <div> <iframe src="main.html" frameborder="0" width="auto" height="auto" name="MAIN" class="1">
             </iframe>
 
         </div>
-    </a>
-    <iframe class="link" src="index.html" frameborder="0" width="auto" height="auto" name="down">
-    </iframe>
-    <link rel="stylesheet" type="" href="view.css">
+
+        <iframe src="index.html" frameborder="0" width="auto" height="250" name="down">
+        </iframe>
+    </div>
+    <link rel="stylesheet" href="view.css">
+    <div>
+        <script>
+            function displayDate() {
+
+
+
+                document.getElementById("DATE").innerHTML = Date()
+
+            }
+
+        </script>
+        <div class="header">
+            <p>现在是</p>
+            <p id="DATE">您看不见？</p>
+        </div>
+    </div>
 </body>
 
 </html>
